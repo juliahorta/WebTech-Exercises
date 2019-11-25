@@ -1,0 +1,23 @@
+form{
+  width: 25%;
+  margin: 0 auto;
+  font-family: helvetica;
+
+}
+
+fieldset{
+  background-color: #e9fcc2;
+
+}
+
+.centered{
+  height: 100%;
+  width: 100%;
+}
+
+.titular{
+  background-color: #bcd18c;
+  color: white;
+  font-weight: bold;
+
+}

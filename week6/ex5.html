@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Multiplication</title>
+        <link rel="stylesheet" href="ex5.css" type="text/css"/>
+    </head>
+      <body>
+    <script>
+      document.write("<table>");
+      document.write("<caption> Multiplication Table </caption>");
+      document.write("<thead>");
+      document.write("<tr>");
+      document.write("<th>X</th>");
+      for (var i=1; i<=15; i++) {
+        document.write("<th>" + i + "</th>");
+      }
+      document.write("</thead>");
+      document.write("<tbody>");
+        for (var j=1; j<=15; j++) {
+          document.write("<tr>");
+          document.write("<td>" + j + "</td>");
+        for (var x=1; x<=15; x++) {
+          document.write("<td>" + j*x + "</td>");
+        }
+      document.write("</tr>")
+      document.write("</table>");
+      document.write("<tfoot>");
+      document.write("<p> JavaScript </p>");
+      document.write("</tfoot>");
+    </script>
+    </body>
+   </html>

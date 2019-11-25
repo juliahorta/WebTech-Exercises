@@ -1,0 +1,50 @@
+body {
+  background-color: #FFF6BB;
+  margin-right: 15%;
+  margin-left: 15%;
+  font-family: helvetica;
+  text-align: center;
+}
+
+footer {
+  background-color: white;
+}
+
+h1 {
+  background-color: white;
+
+}
+
+.main {
+  margin:0 auto;
+  background-color: white;
+}
+
+.navigation {
+  background-color: red;
+  overflow:hidden;
+}
+
+nav h3 ul li{
+  display: inline;
+}
+
+#AboutMyself {
+  text-decoration: underline;
+}
+
+#MyCV {
+  text-decoration: underline;
+}
+
+#MyHobbies {
+  text-decoration: underline;
+}
+
+#Links {
+  text-decoration: underline;
+}
+
+#caption {
+  color: grey;
+}
