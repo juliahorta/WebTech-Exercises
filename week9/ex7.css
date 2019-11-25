@@ -1,0 +1,30 @@
+
+body {
+  background-color: #600052;
+  text-align: center;
+}
+
+#login {
+  background-color: white;
+  padding: 1em;
+  margin-top: 1em;
+  text-align: center;
+  width: 50%;
+}
+
+form {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#email{
+  width: 100%;
+}
+
+#password{
+  width: 100%;
+}
+
+.white{
+  text-align: center;
+}

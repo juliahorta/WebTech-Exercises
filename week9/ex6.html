@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Week 9 - Exercise 6</title>
+
+   <!-- Bootstrap core CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   <link rel="stylesheet" href="ex6.css">
+</head>
+
+<body>
+<div class="container">
+  <h3>User Registration Form</h3>
+  <br>
+  <div class="form" action="http://webprojects.eecs.qmul.ac.uk/jhm32/HTML/labs/week9/ex6.php" method="post">
+    <form onsubmit="return validate()" class="formF" action="ex6.php" method="post">
+    <div>
+    <input type="text" id="name1" name="name" placeholder="First Name">
+    </div>
+    <br>
+    <div>
+    <input type="text" id="name2" name="surname" placeholder="Surname">
+    </div>
+    <br>
+    <div>
+    <input type="email" class="form-control" name="email" id="inputEmail3" placeholder="Email">
+    </div>
+    <br>
+    <div>
+    <input type="password" class="form-control" name="password" id="inputPassword3" placeholder="Password">
+    </div>
+    <br>
+    <div>
+    <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm Password">
+    </div>
+    <br>
+  <button type="submit" class="btn-success">Complete Registration</button>
+  </div>
+  </div>
+  </form>
+
+  <script src="ex6.js">
+
+  </script>
+</body>
+</html>

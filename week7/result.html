@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Result</title>
+        <link rel="stylesheet" href="reset.css" type="text/css"/>
+        <link rel="stylesheet" href="result.css" type="text/css"/>
+    </head>
+
+    <body>
+      <h1> Results</h1>
+      <form action="ex5.html">
+        <fieldset>
+          <p id = "results"></p>
+          <button id="remove" type"submit">Clear Information</button>
+        </fieldset>
+      </form>
+
+      <script>
+
+        var btn2 = document.getElementById("remove");
+        var storedValue1 = localStorage.getItem('firstName');
+        var storedValue2 = localStorage.getItem('lastName');
+
+        document.getElementById("results").innerHTML = "Hi " + storedValue1 + " " + storedValue2;
+
+        btn2.addEventListener('click', function()
+        {
+          localStorage.removeItem('firstName');
+          localStorage.removeItem('lastName');
+
+        })
+
+      </script>
+
+  </body>
+</html>

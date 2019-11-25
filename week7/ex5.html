@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Exercise 5</title>
+        <link rel="stylesheet" href="reset.css" type="text/css"/>
+        <link rel="stylesheet" href="ex5.css" type="text/css"/>
+    </head>
+
+    <body>
+      <form action="result.html" method="post">
+        <fieldset>
+          <div class="container">
+            <p><input type="text" id="name1" placeholder="First Name"></p>
+            <p><input type="text" id="name2" placeholder="Surname"></p>
+            <button id="storage" type"submit">Save Information</button>
+
+          </div>
+        </fieldset>
+      </form>
+
+
+<script>
+
+var btn = document.getElementById("storage");
+  btn.addEventListener('click', function(){
+    var name1Value = document.getElementById("name1").value;
+    localStorage.setItem('firstName',name1Value);
+
+    var name2Value = document.getElementById("name2").value;
+    localStorage.setItem('lastName',name2Value);
+
+
+  })
+
+
+
+
+
+</script>
+
+  </body>
+</html>

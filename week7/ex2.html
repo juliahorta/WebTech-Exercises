@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Form</title>
+    </head>
+
+    <body>
+    <script>
+      var form = document.createElement("FORM");
+      form.setAttribute("id", "myForm");
+      document.body.appendChild(form);
+
+      var input1 = document.createElement("INPUT");
+      input1.setAttribute("type", "text");
+      input1.setAttribute("id", "input1");
+      document.getElementById('myForm').appendChild(input1);
+
+      var input2 = document.createElement("INPUT");
+      input2.setAttribute("type", "text");
+      input2.setAttribute("id", "input2");
+      document.getElementById('myForm').appendChild(input2);
+
+      var btn = document.createElement("BUTTON");
+      btn.setAttribute("id", "button");
+      var text = document.createTextNode("Enter");
+      btn.appendChild(text);
+      document.getElementById('myForm').appendChild(btn);
+
+      let button = document.getElementById('button').addEventListener('click', validate);
+
+      function validate(){
+
+        var x = document.getElementById("input1").value;
+        var y = document.getElementById("input2").value;
+
+        if(x == "" && y == "") {
+          alert("Please input text");
+        }
+        else if(x !== y) {
+          alert("Please make both inputs the same");
+        }
+        else if (x==y){
+          alert("Input accepted");
+        }
+        else {
+          alert("um");
+        }
+      }
+
+    </script>
+  </body>
+</html>

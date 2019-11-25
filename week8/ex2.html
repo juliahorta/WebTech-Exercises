@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Exercise 2</title>
+        <link rel="stylesheet" href="reset.css" type="text/css"/>
+        <link rel="stylesheet" href="ex2.css" type="text/css"/>
+    </head>
+
+    <body>
+      <form onsubmit="return validate();" action="http://webprojects.eecs.qmul.ac.uk/jhm32/HTML/labs/week8/ex2.php" method="post">
+        <fieldset>
+          <legend id= legend>My Birthday</legend>
+          <div class="container">
+          <div class="container2">
+            <p>
+              <label>Name</label>
+              <br>
+              <input type="text" name="1name" placeholder="Name" required>
+            </p>
+            <p>
+              <label>Date of Birth</label>
+              <br>
+              <input type="date" name="bday" id="bday">
+            </p>
+            <div class="container3">
+            <button id="submit" type"submit">Submit</button>
+            <button id="clear" type"reset">Clear Form</button>
+          </div>
+          </div>
+          </div>
+        </fieldset>
+      </form>
+
+
+  <script src="ex2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Order Confirmation</title>
+        <link rel="stylesheet" href="reset.css" type="text/css"/>
+        <link rel="stylesheet" href="ex5.css" type="text/css"/>
+    </head>
+
+    <body>
+      <form onsubmit="return validate();" action="http://webprojects.eecs.qmul.ac.uk/jhm32/HTML/labs/week9/ex5.php" method="post">
+        <fieldset>
+          <legend id= legend>Order Confirmation</legend>
+          <div class="container">
+          <div class="container2">
+            <p id="input1">
+              <label>Name</label>
+              <br>
+              <input type="text" name="name" placeholder="Name" required>
+            </p>
+            <p id="input2">
+              <label>Number of batteries</label>
+              <br>
+              <input type="text" name="batteries" placeholder="Number of Batteries" required>
+            </p>
+            <p>
+              <input type="checkbox" name="check1" value= "c">Four 100-watt light bulbs for £2.39<br>
+            </p>
+            <p>
+              <input type="checkbox" name="check2" value="2">Eight 100-watt light bulbs for £4.29<br>
+            </p>
+            <p>
+              <input type="checkbox" name="check3" value="3">Four 100-watt long-life light bulbs for £3.95<br>
+            </p>
+            <p>
+              <input type="checkbox" name="check4" value="4">Eight 100-watt long-life light bulbs for £7.49<br>
+            </p>
+            <p>
+              <label id="input3">Payment Method:</label>
+              <br>
+              <br>
+              <input type="radio" name="card1" value="1">Visa<br>
+            </p>
+            <p>
+              <input type="radio" name="card2" value="2">Master Card<br>
+            </p>
+            <p>
+              <input type="radio" name="card3" value="3">American Express<br>
+            </p>
+
+            <div class="container3">
+            <button id="submit" type"submit">Submit</button>
+          </div>
+          </div>
+          </div>
+        </fieldset>
+      </form>
+
+
+  </body>
+</html>

@@ -1,0 +1,34 @@
+.centered{
+  height: 100%;
+  width: 100%;
+}
+
+table caption{
+  background-color: darkred;
+  color: white;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 200%
+}
+
+table{
+  margin: 0 auto;
+}
+
+#tabletop{
+  background-color: #e6e2e1;
+  font-family: helvetica;
+  font-weight: bold;
+  border: solid 1pt black;
+}
+
+
+td{
+   border: solid 1pt black;
+   padding: 10pt;
+}
+
+img {max-height:150px;
+max-width:100px;
+border-radius: 10%;
+}
